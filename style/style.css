@@ -44,16 +44,16 @@ a {
 }
 
 /* navigation bar start */
-.nav_container .logo {
-  width: 150px;
-  padding: 10px;
-}
 .nav_container {
   background-color: var(--pure-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+ .nav_container .logo {
+  width: 150px;
+  padding: 10px;
 }
 ul {
   width: 60%;
