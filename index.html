@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aston University Events</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav_container">
+        <h4 class="logo">Aston</h4>
+        <ul>
+          <a href=""><li>HOME</li></a>
+          <a href=""><li>EVENTS</li></a>
+          <a href=""><li>CONTACT</li></a>
+        </ul>
+      </div>
+    </nav>
+    <!-- Header section Begin -->
+    <header>
+      <div class="header_container">
+        <h2>Aston University Events</h2>
+        <input class="search_input" type="text" placeholder="Search Events" />
+      </div>
+    </header>
+    <!-- Header Section End  -->
+
+    <!-- Event Card Section Begin -->
+    <section class="events">
+      <div class="events_container">
+        <!-- Event 1 -->
+        <div class="event">
+          <div class="image_container">
+            <img
+              class="image"
+              src="./img/commuter.jpg"
+              alt=""
+              data-name="commuters"
+            />
+            <p class="date_bubble">Sep 13, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>Commuters Welcome</h1>
+            <div class="location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">Meeting rooms 4 and 5</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">13th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">7 PM to 9 PM</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">Free</span>
+              </div>
+            </div>
+            <div class="btn_container">
+              <a class="btn details" data-name="commuters">More details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 2 -->
+        <div class="event">
+          <div class="image_container">
+            <img
+              class="image"
+              src="./img/game-tournament.jpg"
+              alt=""
+              data-name="games"
+            />
+            <p class="date_bubble">Sep 14, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>Games Tournament</h1>
+            <div class="location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">The Lounge</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">14th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">12 PM to 4 PM</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">Free</span>
+              </div>
+            </div>
+
+            <div class="btn_container">
+              <a class="btn" href="">Sign up now</a>
+              <a class="btn details" data-name="games">More details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 3 -->
+        <div class="event">
+          <div class="image_container">
+            <img
+              class="image"
+              src="./img/citytour.jpg"
+              alt=""
+              data-name="citytour"
+            />
+            <p class="date_bubble">Sep 15, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>Birmingham City Tour</h1>
+            <div class="location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">Meet at the Student's Union</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">15th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">12 PM to 1 PM & 3 PM to 4 PM</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">Free</span>
+              </div>
+            </div>
+            <div class="btn_container">
+              <a class="btn" href="">Sign up Now</a>
+              <a class="btn details" data-name="citytour">More Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 4 -->
+        <div class="event">
+          <div class="image_container">
+            <img
+              class="image"
+              src="./img/livemusic.jpg"
+              alt=""
+              data-name="livemusic"
+            />
+            <p class="date_bubble">Sep 15, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>Live Music</h1>
+            <div class="location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">The Good Place</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">15th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">2 PM to 4 PM</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">Free</span>
+              </div>
+            </div>
+            <div class="btn_container">
+              <a class="btn details" data-name="livemusic">More details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 5-->
+        <div class="event">
+          <div class="image_container">
+            <img
+              class="image"
+              src="./img/artgallery.jpg"
+              alt=""
+              data-name="artgallery"
+            />
+            <p class="date_bubble">Sep 16, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>Art Gallery Crawl</h1>
+            <div class="location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">Meet at the Student's Union</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">16th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">10 AM to 2 PM</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">Free</span>
+              </div>
+            </div>
+            <div class="btn_container">
+              <a class="btn" href="">Download Map</a>
+              <a class="btn details" data-name="artgallery">More details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 6 -->
+        <div class="event">
+          <div class="image_container">
+            <img
+              class="image"
+              src="./img/bignightout.jpg"
+              alt=""
+              data-name="nightout"
+            />
+            <p class="date_bubble">Sep 16, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>Big Night Out</h1>
+            <div class="location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">The Lounge</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">16th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">8 PM to Late</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">5</span>
+              </div>
+            </div>
+            <div class="btn_container">
+              <a class="btn" href="">Buy now</a>
+              <a class="btn details" data-name="nightout">More details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 7 -->
+        <div class="event">
+          <div class="image_container">
+            <img class="image" src="./img/quiz.jpg" alt="" data-name="quiz" />
+            <p class="date_bubble">Sep 17, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>Online Quiz</h1>
+            <div class="div location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">Zoom</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">17th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">6 PM to 8 PM</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">Free</span>
+              </div>
+            </div>
+            <div class="btn_container">
+              <a class="btn" href="">Join Online</a>
+              <a class="btn details" data-name="quiz">More details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 8-->
+        <div class="event">
+          <div class="image_container">
+            <img
+              class="image"
+              src="./img/international.jpg"
+              alt=""
+              data-name="meetandgreet"
+            />
+            <p class="date_bubble">Sep 18, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>International Meet & Greet</h1>
+            <div class="location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">Meeting rooms 4 and 5</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">18th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">3 PM to 5 PM</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">Free</span>
+              </div>
+            </div>
+            <div class="btn_container">
+              <a class="btn details" data-name="meetandgreet">More details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 9 -->
+        <div class="event">
+          <div class="image_container">
+            <img
+              class="image"
+              src="./img/karoake-night.jpg"
+              alt=""
+              data-name="karaoke"
+            />
+            <p class="date_bubble">Sep 18, 2022</p>
+            <i onclick="likeButton(this)" class="fa-regular fa-heart heart"></i>
+          </div>
+          <div class="event_details">
+            <h1>Karaoke Night</h1>
+            <div class="location_date_time">
+              <div class="location event_spec">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="icon_text">The Lounge</span>
+              </div>
+
+              <div class="date event_spec">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span class="icon_text">18th September, 2022</span>
+              </div>
+
+              <div class="time event_spec">
+                <i class="fa-regular fa-clock"></i>
+                <span class="icon_text">8 PM to 11 PM</span>
+              </div>
+              <div class="price event_spec">
+                <i class="fa-solid fa-sterling-sign astonred"></i>
+                <span class="astonred">Free</span>
+              </div>
+            </div>
+            <div class="btn_container">
+              <a class="btn details" data-name="karaoke">More details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Event Card Section Ends -->
+
+    <!-- pop up box content begins -->
+    <!-- popup 1 -->
+    <div class="lightbox" data-target="commuters">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/commuter.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>Commuters Welcome</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">13</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Tuesday</span>
+              <span class="time">7 PM - 9 PM</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            For all of our student that commute into the campus, come down to
+            the Student union and meet fellow commuter students. Come chill,
+            grab a drink from the lounge or the Good Place and potentially meet
+            students from your course or in your area! Now registration is
+            needed, just turn up and enjoy
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- popup 2 -->
+    <div class="lightbox" data-target="games">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/game-tournament.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>Games Tournament</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">14</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Wednesday</span>
+              <span class="time">12 PM - 4 PM</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            Nintendo Switch, Fifa, PS4, jenga, Connect 4.. We have it all. Come
+            along with friends or alone and challenge people to a game or two.
+            Dont forget to sign up for the event
+          </p>
+          <a href="" class="btn popupbtn">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup 3 -->
+    <div class="lightbox" data-target="citytour">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/citytour.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>Birmingham City Tour</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">15</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Thursday</span>
+              <span class="time">12 PM to 1 PM</span>
+              <span class="time">3 PM to 4 PM</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            Explore the city with our fantastic Aston Aunties and learn more
+            about the best places to visit in Birmingham! Don't forget to sign
+            up for the time slot that suits you the best.
+          </p>
+          <div>
+            <a href="" class="btn popupbtn">Sign up for 12PM</a>
+            <a href="" class="btn popupbtn">Sign up for 3PM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup 4 -->
+    <div class="lightbox" data-target="livemusic">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/livemusic.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>Live Music</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">15</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Thursday</span>
+              <span class="time">2 PM to 4 PM</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            Come chill with your friends and see the talented upcoming Musicians
+            that Birmingham has to offer Dont forget to checkout other nights!
+          </p>
+          <a href="" class="btn popupbtn">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup 5 -->
+    <div class="lightbox" data-target="artgallery">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/artgallery.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>Art Gallery Crawl</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">16</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Friday</span>
+              <span class="time">10 AM - 2 PM</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            Fancy some cultures this week - look no further than our canal side
+            crawl to art galleries far far away. Download this map to make sure
+            you dont miss anything!
+          </p>
+          <a href="" class="btn popupbtn">Download the Map</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup 6 -->
+    <div class="lightbox" data-target="nightout">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/bignightout.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>Big Night Out</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">16</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Friday</span>
+              <span class="time">8 PM - Late</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            Don't want to spend this night on your own? We have arranged
+            thereception for the big welcome party just for you.
+          </p>
+          <a href="" class="btn popupbtn">Buy Tickets Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup 7 -->
+    <div class="lightbox" data-target="quiz">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/quiz.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>Online Quiz</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">17</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Saturday</span>
+              <span class="time">6 PM - 8 PM</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            The first quiz of the year! Join us to test your general knowledge,
+            meet new friends and win some prizes.
+          </p>
+          <a href="" class="btn popupbtn">Join Online</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup 8 -->
+    <div class="lightbox" data-target="meetandgreet">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/international.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>International Meet and Greet</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">18</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Sunday</span>
+              <span class="time">3 PM - 5 PM</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            Come chill, grab a drink from the Lounge or the Good place and
+            potentially Meet students from you course or in your area! No
+            registration is needed! Just turn up and enjoy
+          </p>
+          <a href="" class="btn popupbtn">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup 9 -->
+    <div class="lightbox" data-target="karaoke">
+      <div class="popupbox">
+        <i class="close_btn fas fa-times"></i>
+        <img src="./img/karoake-night.jpg" alt="" />
+        <div class="popupcontent">
+          <h1>Karaoke Night</h1>
+          <div class="time_date">
+            <div class="span_time_date">
+              <span class="month">Sep</span>
+              <span class="date">18</span>
+            </div>
+            <div class="span_time_date">
+              <span class="day">Sunday</span>
+              <span class="time">8 PM - 11 PM</span>
+            </div>
+            <div class="span_time_date save_container">
+              <i class="fa-regular fa-calendar-days calender"></i>
+              <span class="save_btn">Save</span>
+            </div>
+          </div>
+          <h4>Event Details:</h4>
+          <p>
+            Do you like singing? We would love to hear that! Come to The Lounge
+            and have fun with your friends!
+          </p>
+          <a href="" class="btn popupbtn">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- pop up box content Ends -->
+
+    <!-- Overlay shade during popup -->
+    <div class="" id="overlay"></div>
+
+    <!-- footer section begins -->
+    <footer class="footer">
+      <p>Copyright. Aston University 2022</p>
+    </footer>
+    <!-- footer section ends -->
+
+    <!-- Javascript main file -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
