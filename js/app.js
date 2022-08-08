@@ -1,7 +1,3 @@
-function likeButton(x) {
-  x.classList.toggle("fa-solid");
-}
-
 let lightBoxContainer = document.querySelectorAll(".lightbox");
 let detailsButton = document.querySelectorAll(".details");
 let image = document.querySelectorAll(".image");
@@ -56,20 +52,24 @@ window.onclick = (e) => {
   }
 };
 
-
 //Search box for filtering events implementation
-document.querySelector('.search_input').addEventListener('input', filterSearch);
-function filterSearch(){
-  const searchBox = document.querySelector('.search_input')
-  const searchQuery = searchBox.value.toLowerCase()
-  const eventBoxes = document.querySelectorAll('.event')
+document.querySelector(".search_input").addEventListener("input", filterSearch);
+function filterSearch() {
+  const searchBox = document.querySelector(".search_input");
+  const searchQuery = searchBox.value.toLowerCase();
+  const eventBoxes = document.querySelectorAll(".event");
 
-  eventBoxes.forEach((event)=>{
-    let eventTitle = event.querySelector('h1').textContent.toLowerCase();
-    if (eventTitle.includes(searchQuery)){
-      event.style.display='';
-    }else{
-      event.style.display='none';
+  eventBoxes.forEach((event) => {
+    let eventTitle = event.querySelector("h1").textContent.toLowerCase();
+    if (eventTitle.includes(searchQuery)) {
+      event.style.display = "";
+    } else {
+      event.style.display = "none";
     }
-  })
+  });
+}
+
+// function to toggle love button
+function likeButton(x) {
+  x.classList.toggle("fa-solid");
 }

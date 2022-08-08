@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 :root {
-  --main-bgm-color: rgb(21, 60, 73);
+  --main-color: rgb(21, 60, 73);
   --aston-red: rgb(207, 0, 0);
   --default-font-size: 1rem;
   --pure-white: #fff;
@@ -44,53 +44,136 @@ a {
 }
 
 /* navigation bar start */
+.nav_container .logo {
+  width: 150px;
+  padding: 10px;
+}
 .nav_container {
-  background-color: var(--main-bgm-color);
-  color: var(--pure-white);
+  background-color: var(--pure-white);
   display: flex;
-  height: 40px;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
 }
-
-.nav_container h4 {
-  padding: 0 40px;
-}
-
-.nav_container ul li {
-  font-size: 0.8rem;
-  transition: 0.4s ease-in-out;
-}
-.nav_container ul li:hover {
-  color: rgb(143, 138, 138);
-}
-
-.nav_container ul {
-  width: 15rem;
+ul {
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+ul li {
+  transition: 0.4s ease-in-out;
+}
+
+ul li a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+ul li:hover a {
+  color: rgb(119, 103, 103);
+}
+.shop {
+  background-color: rgb(9, 175, 212);
+  padding: 6px 17px;
+  border-radius: 4px;
+  letter-spacing: 0.12rem;
+  color: #ccc;
+}
+.nav_container .shopli:hover {
+  transform: scale(1.2);
+}
+ul li:hover .shop {
+  color: #ccc;
+}
+
+ul li .sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+ul .sign-in i {
+  font-size: 1.2rem;
+}
+ul .sign-in:hover {
+  background-color: rgb(20, 41, 41);
+  color: #fff;
+}
+.nav_container .checkbtn {
+  display: none;
+  margin-right: 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+#check {
+  display: none;
 }
 /* navigation bar ends */
 
 /* header section start */
 .header_container {
+  position: relative;
   height: 300px;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
-    rgba(125, 222, 189, 1) 0%,
-    rgba(92, 238, 190, 1) 19%,
+    rgb(44, 83, 166) 0%,
+    rgb(92, 172, 238) 19%,
     rgba(0, 212, 255, 1) 80%
   );
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
-.search_input {
+.header_container .bubble {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+}
+.header_container .bubble1 {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+.header_container .bubble2 {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+}
+.header_container .bubble3 {
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+}
+.header_container .bubble4 {
+  position: absolute;
+  bottom: 20px;
+  left: -50px;
+}
+.header_container .bubble img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  overflow: hidden;
+}
+.header_container h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.header_container .search_input {
   width: 40rem;
   height: 3rem;
   padding: 12px 20px;
@@ -100,6 +183,7 @@ a {
   text-align: center;
   margin: 20px 20px;
 }
+
 /* Header section ends */
 
 /* Event cards section begin */
@@ -402,11 +486,46 @@ a {
   .search_input {
     max-width: 20rem;
   }
+  .header_container .bubble {
+    display: none;
+  }
+}
+
+@media (max-width: 890px) {
+  .nav_container .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 60%;
+    background: #2c3e50;
+    top: 90px;
+    right: -100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #fff;
+    transition: 0.4s ease;
+  }
+  ul li a {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
+  }
 }
 
 @media (max-width: 724px) {
   .events_container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .header_container h2 {
+    font-size: 1.3rem;
   }
   .popupbox {
     flex-direction: column;
@@ -422,4 +541,8 @@ a {
   .popupcontent .btn {
     font-size: 15px;
   }
+  .events_container .event .image_container .heart {
+    bottom: -5px;
+  }
 }
+/* css responsive design over */
